@@ -3,26 +3,95 @@
 <meta charset="utf-8">
 <head>
 <style type="text/css">
-	
+	/*definiré un layout estático*/
+	body{
+		margin:0px auto;
+		width: 960px;
+		background: url("./images/bg.jpeg") no-repeat top;
+		text-align: center;
+		margin: 0px;
+	}
+	.header{
+		height: 50px;
+		width: 900px;
+		line-height: 50px;
+		color:white;
+	}
+	.header ul li{
+		display: inline-block;
+		margin-left: 10px;
+		float: right;
+		color:white;
+	}
+	.header img{
+		display: inline-block;
+		margin-left: 10px;
+		float: left;
+		width: 200px;
+	}
+	.main{
+		margin:100px;
+		padding:0px 50px 0px 50px;
+		box-sizing: border-box;
+		color:white;
+	}
+	.Intro{
+		margin: 0px auto;
+		padding:10px 50px 10px 50px;
+		width: 960px;
+		height: 400px;
+		box-sizing: border-box;
+		background-color: white;
+	}
+	.Intro img{
+		height: 300px;
+		width: 300px;
+		position:static;	
+	}
+	.Inscrip{
+		margin: 0px auto;
+		padding:10px 50px 10px 50px;
+		width: 960px;
+		box-sizing: border-box;
+		background-color: white;
+	}
+	.Contacto{
+		width: 300px;
+		box-sizing: border-box;
+		text-align: left;
+	}
+	.Contacto ul li{
+		display: inline-block;
+		margin-left: 10px;
+	}
+	.Suscríbete{
+		width: 300px;
+		box-sizing: border-box;
+	}
 </style>
 	<title> Desafío Latam </title>
 </head>
 <body>
-	<nav> 
+	<nav class="header"> 
 		<ul>
-  			<li>Equipo</li>
+			<img src="./images/latam_logo.png">
+  			<li>Contacto</li>
   			<li>Blog</li>
- 			<li>Contacto</li>
+ 			<li>Equipo</li>
 		</ul>
 	</nav>
 	<div class="main">
 		<h1> COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h1>
 		<P> Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica. Se necesitan más desarrolladores y ¡tú podrías ser uno!</P>
+		
+	</div>
+	<div class="Intro">
 		<h2> EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h2>
 		<P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat!</P>
+		<img src="./images/viewing-gallery-for-happy-people.png">
 	</div>
 	<div class="Inscrip">
 		<h2> SOLICITA INFORMACIÓN E INSCRÍBETE</h2>
@@ -31,8 +100,8 @@
 		<p> ¡Vive la experiencia Desafío Latam!</p>
 	</div>
 	<div class="Contacto">
-	<ul> Contacto:
-		<li>Desafío Latam</li>
+	<ul>
+		<li>Contacto: <br> Desafío Latam</li>
 		<li>Ezequias Alliende 2361</li>
 		<li>P: +56 9 5117 7975</li>
 		<li> inscripciones@desafiolatam.com</li>
